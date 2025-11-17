@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Portfolio</title>
+
+  <!-- FONT AWESOME PARA ICONOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth; /* Desplazamiento suave */
+    }
+
+    body {
+      background-color: #1f1f2e;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      text-align: justify;
+    }
+
+    h1.main-title {
+      font-size: 2.5em;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #b0aefb;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+      gap: 20px;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #6c63ff;
+
+      /* Mejorar nitidez */
+      image-rendering: crisp-edges;
+      image-rendering: -webkit-optimize-contrast;
+      filter: contrast(105%) saturate(105%);
+    }
+
+    .info {
+      text-align: left;
+      max-width: 400px;
+    }
+
+    .info h2 {
+      font-size: 1.8em;
+      color: #fff;
+    }
+
+    .info h3 {
+      font-weight: 300;
+      color: #aaa;
+      margin-top: 5px;
+    }
+
+    .about-btn {
+      margin-top: 10px;
+      display: inline-block;
+      background-color: #6c63ff;
+      color: #fff;
+      padding: 8px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 0.9em;
+      transition: 0.3s;
+    }
+
+    .about-btn:hover {
+      background-color: #847dff;
+    }
+
+    .section-title {
+      margin: 40px 0 20px;
+      font-size: 1.4em;
+      text-transform: uppercase;
+      color: #b0aefb;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .project-card {
+      background-color: #2b2b3d;
+      border-radius: 12px;
+      padding: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      background-color: #1f1f2e;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      image-rendering: high-quality;
+    }
+
+    .project-card h3 {
+      font-size: 1.1em;
+      margin-bottom: 5px;
+      color: #fff;
+    }
+
+    .project-card p {
+      font-size: 0.9em;
+      color: #bbb;
+    }
+
+    .contact {
+      margin-top: 50px;
+      text-align: left;
+    }
+
+    .contact a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #bbb;
+      text-decoration: none;
+      margin-bottom: 10px;
+      transition: color 0.3s;
+      font-size: 1rem;
+    }
+
+    .contact a:hover {
+      color: #6c63ff;
+    }
+
+    .contact i {
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 class="main-title">Digital Portfolio</h1>
+
+  <header>
+    <img src="img/calidad.jpeg" alt="Foto de perfil">
+
+    <div class="info">
+      <h2>Catherine Miranda</h2>
+      <h3>Web Designer</h3>
+
+      <!-- Ahora sí lleva al Contact -->
+      <a href="#contact" class="about-btn">About me</a>
+    </div>
+  </header>
+
+  <section>
+    <h3 class="section-title">Projects</h3>
+
+    <div class="projects">
+
+      <div class="project-card">
+        <img src="img/certi.jpeg" alt="Proyecto 1">
+        <h3>Certificación MOS EXCEL</h3>
+        <p>This project was a great challenge due to its significant value for the students of Supérate! Constant practice and guidance from the teacher led us to a successful outcome.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <img src="img/emprende.jpeg" alt="Proyecto 2">
+        <h3>¡Supérate! Emprende</h3>
+        <p>The three subjects were combined: Core values, IT, and English. A brand, logo, mission, vision, and website were created along with the presentation.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <img src="img/expo.jpeg" alt="Proyecto 3">
+        <h3>Expo de Logros</h3>
+        <p>
+            This project was a big challenge because of the commitment it required. In this activity, we designed a website, created a narrative presentation, and built a robot. It was truly a successful project thanks to everyone's hard work.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h3 class="section-title">Contact</h3>
+
+    <a href="https://sites.google.com/view/miportafolio-catherine-miranda/inicio?read_current=1">
+      <i class="fa-solid fa-globe"></i> Complete portfolio
+    </a>
+
+    <a href="mailto:catherinemiranda.cst@gmail.com">
+      <i class="fa-solid fa-envelope"></i> E-mail
+    </a>
+
+    <a href="http://www.linkedin.com/in/catherine-miranda-0701a837a">
+      <i class="fa-brands fa-linkedin"></i> LinkedIn
+    </a>
+
+  </section>
+
+</body>
+</html>
